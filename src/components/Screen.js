@@ -161,11 +161,14 @@ class Screen extends React.Component {
 
     if (parseInt(event.target.style.top) < 0) {
       sheet.y = 0
-    } else if (parseInt(event.target.style.left) < 0) {
+    }
+    if (parseInt(event.target.style.left) < 0) {
       sheet.x = 0
-    } else if (parseInt(event.target.style.top) > (board.height - event.target.offsetHeight)) {
+    }
+    if (parseInt(event.target.style.top) > (board.height - event.target.offsetHeight)) {
       sheet.y = board.height - event.target.offsetHeight
-    } else if (parseInt(event.target.style.left) > (board.width - event.target.offsetWidth)) {
+    }
+    if (parseInt(event.target.style.left) > (board.width - event.target.offsetWidth)) {
       sheet.x = board.width - event.target.offsetWidth
     }
 

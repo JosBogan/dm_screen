@@ -18,7 +18,14 @@ class Sheet extends React.Component {
           [this.props.borderIndex]: '4px solid blue'
         }}
       >
-
+        <div className="sheet_connector_container">
+          <div className="sheet_connector"></div>
+          <div className="sheet_container_central_container">
+            <div className="sheet_connector"></div>
+            <div className="sheet_connector"></div>
+          </div>
+          <div className="sheet_connector"></div>
+        </div>
       </div>
     )
   }
